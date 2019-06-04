@@ -1,0 +1,24 @@
+﻿
+<h2>{{message}}</h2>
+
+<br />
+
+<table>
+
+    <tr>
+        <th>Name</th>
+    </tr>
+
+    <tr ng-repeat="m in listMakes">
+        <td>{{$index}}</td>
+        <td>{{m.Name}}</td>
+        <td><a href="#/EditMake/{{m.Id}}">Edit</a></td>
+        <td><a href="#" ng-click="DeleteMake(make.Id,$index)">Delete</a></td>
+    </tr>
+
+
+</table>
+<div ng-if="(listMakes.length == 0)">
+    no Makes to display
+</div>
+

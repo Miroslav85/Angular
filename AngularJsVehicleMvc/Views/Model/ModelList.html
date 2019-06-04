@@ -1,0 +1,20 @@
+﻿
+<h2>{{message}}</h2>
+
+<br />
+<a href="../Make/MakeList.html">Make List</a>
+<table>
+
+    <tr>
+        <th>Name</th>
+    </tr>
+
+    <tr ng-repeat="m in listModels">
+        <td>{{$index}}</td>
+        <td>{{m.Name}}</td>
+        <td><a href="#/EditModel/{{m.Id}}">Edit</a></td>
+        <td><a href="#" ng-click="DeleteModel(model.Id,$index)">Delete</a></td>
+    </tr>
+
+
+</table>

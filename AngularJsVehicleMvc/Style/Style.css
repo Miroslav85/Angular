@@ -1,0 +1,13 @@
+﻿
+table {
+  border: 1px solid black;
+}
+
+td {
+  height: 50px;
+  vertical-align: central;
+}
+
+th {
+  text-align: left;
+}
