@@ -3,13 +3,16 @@
 
 <br />
 <a href="../Make/MakeList.html">Make List</a>
+<br />
+Search : <input type="text" placeholder="serach Makes" ng-model="searchText.Name" />
+<br />
 <table>
 
     <tr>
         <th>Name</th>
     </tr>
 
-    <tr ng-repeat="m in listModels">
+    <tr ng-repeat="m in listModels | filter:searchText">
         <td>{{$index}}</td>
         <td>{{m.Name}}</td>
         <td><a href="#/EditModel/{{m.Id}}">Edit</a></td>
